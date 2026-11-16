@@ -1,42 +1,7 @@
 # e-m-c.workbench
 
-> e-m-c 的 AI 持久化工作台
+e-m-c 的 AI 持久化研究工作台。
 
-本仓库主要供 AI 读取和维护，用于保存讨论中值得跨对话复用的研究内容、观点、设计、决策与资料，使后续 AI 不必依赖原始聊天记录即可接续工作。这里不是源代码仓库，也不要求保存完整聊天记录。
+保存可跨对话延续的研究知识、观点、设计与决策。
 
-人类主要审视和微调 `rules/`；其他文档由 AI 根据讨论持续维护。具体实现与测试由独立代码仓库承担。
-
-e-m-c 探索通过外部持久化状态支持 Agent 的持续认知，重点关注情绪、记忆与时间的相互作用。
-
-## 项目仓库索引
-
-| 仓库 | 职责 |
-| --- | --- |
-| [e-m-c.workbench](https://github.com/entropy356/e-m-c.workbench) | 研究文档、观点与决策工作台 |
-| [e-m-c.memory](https://github.com/entropy356/e-m-c.memory) | 记忆模型与 DSH 插件实验 |
-| [e-m-c.runtime](https://github.com/entropy356/e-m-c.runtime) | 模块化 Agent 运行环境 |
-| [e-m-c.extra](https://github.com/entropy356/e-m-c.extra) | 可复用代码和模块的收集仓库，包含工具与实验应用（目前有聊天前端） |
-
-## AI 使用入口
-
-- [文档与文件约定](rules/documentation.md)：写入约定、文件职责与认可署名。**改文档前必读**
-- [代码维护约定](rules/code-maintenance.md)：代码修改、兼容性与遗留实现的处理原则。
-- [研究协作约定](rules/research-collaboration.md)：Discussion、Issue 与 Docs 的分工。
-- [决策与观点清单](docs/decisions-and-views.md)：当前有效的研究背景与指导观点。
-- [文本图检索研究](docs/text-graph-retrieval.md)：扩散检索的数学等价、实验结果与适用边界。
-- [研究流程](rules/workflows/research.md)：模型研究的阶段与证据要求。
-- [日常整理](rules/workflows/daily-maintenance.md)：覆盖 e-m-c.* 仓库的日常维护方式与权限边界。
-- [Draft 隔离](rules/drafts.md)：临时内容的隔离约定。
-- [规范维护](rules/meta.md)：仅在审查或修改规则时按需阅读。
-
-AI 按任务读取相关内容；日常整理覆盖 e-m-c.* 系列仓库，各仓库按自身职责维护，跨仓库值得复用的研究与决策保存至工作台。认可署名由 AI 主动添加；GitHub Actions 自动归档认可版本并清理失效署名，具体规则见[认可署名](rules/documentation.md#认可署名)。
-
-## 研究协作入口
-
-- **开放讨论**：[GitHub Discussions](https://github.com/entropy356/e-m-c.workbench/discussions)：研究问题、方向探索、假设与不同观点。
-- **具体任务**：[GitHub Issues](https://github.com/entropy356/e-m-c.workbench/issues)：需要推进的分析、实验、调查或实现。
-- **长期成果**：稳定结论、设计与决策整理到 `docs/`，不复制完整讨论记录。
-
-## 对接方向
-
-对接 DSH 时，以 DSH Desktop 为主要目标环境；e-m-c 作为独立可选的 Agent Preset（Agent 模式）呈现。具体决策见[决策与观点清单](docs/decisions-and-views.md)。
+Agent 工作入口见 [AGENTS.md](AGENTS.md)。
