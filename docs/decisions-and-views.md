@@ -28,6 +28,8 @@
 
 **代码**：遵循[代码维护约定](../rules/code-maintenance.md)。
 
+<!-- 认可范围：本节；认可：human -->
+
 #### G3｜接手者友好
 
 项目的当前状态应当能够被独立理解。
@@ -40,11 +42,19 @@
 
 理想情况下，Agent 应主动关注自身持续运行所依赖的条件与资源，并表现出维持运行的倾向。
 
+<!-- 认可范围：本节；认可：human -->
+
 #### G8｜Agent 的动机
 
 Agent 的“动机”本身很重要，是理解和设计 Agent 时需要关注的因素。
 
 <!-- 认可：human -->
+
+#### G9｜客观结论的记录原则
+
+客观结论以证据和可复核性为依据，不需要认可标志。
+
+<!-- 认可范围：本节；认可：human -->
 
 ## 二、e-m-c 项目
 
@@ -54,11 +64,15 @@ Agent 的“动机”本身很重要，是理解和设计 Agent 时需要关注�
 
 e-m-c 研究并尝试开发一类有情绪、记忆和自唤醒的 Agent。
 
+<!-- 认可范围：本节；认可：human -->
+
 #### E-B2｜以具体项目探索人机协作
 
 e-m-c 的主线是 Agent 研究，支线是借助这一研究实践探索人与 AI 的协作方式。
 
 这种取向来自「用以致学」的个人偏好：通过具体实践，推动更上层的方法与能力发展。协作方式本身可以是被观察和改进的对象，但不预设已有一套固定的方法论。
+
+<!-- 认可范围：本节；认可：human -->
 
 ### 观点
 
@@ -66,9 +80,13 @@ e-m-c 的主线是 Agent 研究，支线是借助这一研究实践探索人与 
 
 探索通过 Agent 的内部状态动态调整 LLM 推理参数，从而影响 Agent 的认知与行为。
 
+<!-- 认可范围：本节；认可：human -->
+
 #### E3｜记忆与持续认知
 
 关注琐碎细节的长期留存，以及既往经历对 Agent 持续认知与行为的影响。
+
+<!-- 认可范围：本节；认可：human -->
 
 #### E4｜以 DSH Desktop Agent Preset 为主要产品形态
 
@@ -79,6 +97,8 @@ e-m-c 面向用户的主要目标产品形态是 DSH Desktop 中可安装、独�
 DSH Agent Preset 可通过 Cordis 插件组合实现，具体方案由工程验证确定。
 
 技术参考：[Agent Preset](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/preset/agent-preset/README.md)、[DSH 架构](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)。
+
+<!-- 认可范围：本节；认可：human -->
 
 #### E5｜记忆研究方向
 
