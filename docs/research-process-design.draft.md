@@ -25,7 +25,7 @@
 | [e-m-c.extra](https://github.com/entropy356/e-m-c.extra) | 根目录实验前端连接一套 `emc.*` 后端；`m1-memory/` 则以当前 Runtime 为宿主，组合 Agent 作用域的 `m1.memory` 模块、替换默认 direct 的工具循环认知策略、联网搜索和可折叠运行链。 | 已有一个可观察的组合实例：Runtime、记忆模块、认知策略和交互前端各自承担不同职责。运行链可用于观察模块贡献及行为结果。详见 [M1 记忆前端](https://github.com/entropy356/e-m-c.extra/blob/main/m1-memory/README.md)。 |
 | [e-m-c.memory](https://github.com/entropy356/e-m-c.memory) | 独立的 Memory v0.1 数学实验，以及通过 Cordis 接入 DeepSeek Harness 的工具插件；其模型文档明确说明它不修改 Runtime。 | 保留独立模型实验和 DSH 接入路径。它与 extra 中基于 Runtime 的 M1 记忆模块不是同一个实现，不应混为一谈。详见 [Memory 模型](https://github.com/entropy356/e-m-c.memory/blob/main/docs/memory-model.md)。 |
 
-因此，当前已有的是**软件模块化基础和一个实际组合案例**，而不是完整的研究工作流系统。当前 Runtime 也没有内置 Emotion、Clock 等完整认知模块；M1 的接入不代表这些机制已经实现或验证。
+因此，当前已有的是**软件模块化基础和一个实际组合案例**，而不是完整的研究工作流系统。当前 Runtime 也没有内置完整的认知模块；M1 的接入不代表其他认知机制已经实现或验证。
 
 ## 研究工作模块
 
