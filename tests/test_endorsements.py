@@ -28,8 +28,8 @@ class EndorsementTests(unittest.TestCase):
         self.assertEqual(added[0][0].identity, 'ChatGPT GPT-6 Chat')
 
     def test_human_endorsement_is_supported(self):
-        original = 'human-confirmed content\\n'
-        new = original + '<!-- 认可：human -->\\n'
+        original = 'human-confirmed content\n'
+        new = original + '<!-- 认可：human -->\n'
         cleaned, added = e.reconcile(original, new, 'docs/a.md', set())
         self.assertEqual(cleaned, new)
         self.assertEqual(len(added), 1)
