@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Archive explicit AI endorsements as annotated Git tags and remove stale ones.
+"""Archive explicit endorsements as annotated Git tags and remove stale ones.
 
 Git tags are the versioned source of truth; Markdown comments are current-view labels.
 The script intentionally fails closed on changed scopes and unknown old signatures.
